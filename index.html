@@ -26,7 +26,8 @@
 				<div><label for="gender_other">Other:</label>
 					<input type="radio" id="gender_other" name="gender_field" value="Other"></div>
 			</fieldset>
-			<p></p><label for="age_field">Age:</label>
+			<fieldset>
+				<legend>Age:</legend>
 				<select id="age_field" name="age_field">
 					<option value="Under 18">Under 18</option>
 					<option value="18-24">18-24</option>
@@ -34,11 +35,12 @@
 					<option value="35-44">35-44</option>
 					<option value="45-54">45-54</option>
 					<option value="55-64">55-64</option>
-					<option value="65 and over">65 and over</option><p></p>
-				</select><p></p>
+					<option value="65 and over">65 and over</option>
+				</select>
+			</fieldset>	
 		</fieldset>
 	<fieldset>
-	  <p></p><legend><strong>My Availability:</strong></legend>
+	  <legend><strong>My Availability:</strong></legend>
 	  <div><label for="available_sunday">Sunday</label>
 	    <input type="checkbox" id="available_sunday" name="available_field[]" value="Sunday"></div>  
 	  <div><label for="available_monday">Monday</label>
@@ -53,9 +55,9 @@
 	    <input type="checkbox" id="available_friday" name="available_field[]" value="Friday"></div>  
 	  <div><label for="available_saturday">Saturday</label>
 	    <input type="checkbox" id="available_saturday" name="available_field[]" value="Saturday"></div>  
-	</fieldset>  
+	</fieldset>
 	<fieldset>
-	  <p><legend><strong>Enter Additional Comments here:</strong></legend>
+	  <legend><strong>Enter Additional Comments here:</strong></legend>
 	  <textarea name="comments_field" rows="5" cols="50"></textarea>
 		<input type="hidden" id="hidden_field" name="hidden_field" value="JLau1">
 	  <div><input type="submit" value="Submit"></div>
