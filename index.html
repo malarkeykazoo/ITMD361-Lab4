@@ -13,18 +13,18 @@
 					<input type="text" id="first_name_field" name="first_name_field"></p>
 			<p><label for="last_name_field">Last name:</label>
 					<input type="text" id="last_name_field" name="last_name_field"></p>
-      <p><label for="phone_field">Phone Number (555-555-1234 format):</label>
-        <input type="tel" id="phone_field" name="phone_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
+      <p><label for="phone_field">Phone Number:</label>
+        <input type="tel" id="phone_field" name="phone_field" placeholder="555-555-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></p>
       <p><label for="email_field">Email Address:</label>
         <input type="email" id="email_field" name="email_field"></p>
 	  <fieldset>
 	  <legend>Gender:</legend>
-			<p><label for="gender_male">Male:</label>
-	      <input type="radio" id="gender_male" name="gender_field" value="Male"></P>
-	    <p><label for="gender_female">Female:</label>
-	      <input type="radio" id="gender_female" name="gender_field" value="Female"></p>
-	    <p><label for="gender_other">Other/Unspecified:</label>
-	      <input type="radio" id="gender_other" name="gender_field" value="Other/Unspecified"></p>
+			<div><label for="gender_male">Male:</label>
+	      <input type="radio" id="gender_male" name="gender_field" value="Male"></div>
+	    <div><label for="gender_female">Female:</label>
+	      <input type="radio" id="gender_female" name="gender_field" value="Female"></div>
+	    <div><label for="gender_other">Other/Unspecified:</label>
+	      <input type="radio" id="gender_other" name="gender_field" value="Other"></div>
 	  </fieldset>
 	  <p><label for="age_field">Age:</label>
         <select id="age_field" name="age_field">
@@ -39,27 +39,28 @@
 	</fieldset>
 	<fieldset>
 	  <p><legend><strong>My Availability:</strong></legend></p>
-	  <p><label for="available_sunday">Sunday</label>
-	    <input type="checkbox" id="available_sunday" name="available_field[]" value="Sunday"></p>
-	  <p><label for="available_monday">Monday</label>
-	    <input type="checkbox" id="available_monday" name="available_field[]" value="Monday"></p>
-	  <p><label for="available_tuesday">Tuesday</label>
-	    <input type="checkbox" id="available_tuesday" name="available_field[]" value="Tuesday"></p>
-	  <p><label for="available_wednesday">Wednesday</label>
-	    <input type="checkbox" id="available_wednesday" name="available_field[]" value="Wednesday"></p>
-	  <p><label for="available_thursday">Thursday</label>
-	    <input type="checkbox" id="available_thursday" name="available_field[]" value="Thursday"></p>
-	  <p><label for="available_friday">Friday</label>
-	    <input type="checkbox" id="available_friday" name="available_field[]" value="Friday"></p>
-	  <p><label for="available_saturday">Saturday</label>
-	    <input type="checkbox" id="available_saturday" name="available_field[]" value="Saturday"></p>
+	  <div><label for="available_sunday">Sunday</label>
+	    <input type="checkbox" id="available_sunday" name="available_field[]" value="Sunday"></div>  
+	  <div><label for="available_monday">Monday</label>
+	    <input type="checkbox" id="available_monday" name="available_field[]" value="Monday"></div>  
+	  <div><label for="available_tuesday">Tuesday</label>
+	    <input type="checkbox" id="available_tuesday" name="available_field[]" value="Tuesday"></div>  
+	  <div><label for="available_wednesday">Wednesday</label>
+	    <input type="checkbox" id="available_wednesday" name="available_field[]" value="Wednesday"></div>  
+	  <div><label for="available_thursday">Thursday</label>
+	    <input type="checkbox" id="available_thursday" name="available_field[]" value="Thursday"></div>  
+	  <div><label for="available_friday">Friday</label>
+	    <input type="checkbox" id="available_friday" name="available_field[]" value="Friday"></div>  
+	  <div><label for="available_saturday">Saturday</label>
+	    <input type="checkbox" id="available_saturday" name="available_field[]" value="Saturday"></div>  
 	</fieldset>  
 	<fieldset>
 	  <p><legend><strong>Enter Additional Comments here:</strong></legend>
 	    <textarea name="comments_field" rows="5" cols="50"></textarea>
-	</fieldset></p>
-      <input type="submit" value="Submit">
-	  <input type="hidden" id="hidden_field" name="hidden_field" value="JLau1">
+			<input type="hidden" id="hidden_field" name="hidden_field" value="JLau1">
+	    <div><input type="submit" value="Submit"></div>
+	</fieldset>		
+	  
 </form>
 </body>
 </html>
